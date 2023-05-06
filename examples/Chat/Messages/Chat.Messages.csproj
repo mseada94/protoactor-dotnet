@@ -6,9 +6,9 @@
         <PackageReference Include="Grpc.Tools" Version="2.51.0" PrivateAssets="All" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\..\src\Proto.Actor\Proto.Actor.csproj" />
+		<PackageReference Include="Proto.Actor" Version="0.0.0-alpha.0.1732" GeneratePathProperty="true" />
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="Chat.proto" GrpcServices="Server" AdditionalImportDirs=".; ..\..\..\src" />
+		<Protobuf Include="Chat.proto" GrpcServices="Server" AdditionalImportDirs=".; $(PkgProto_Actor)\Protos" />
     </ItemGroup>
 </Project>

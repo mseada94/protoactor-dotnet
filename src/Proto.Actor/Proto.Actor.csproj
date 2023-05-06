@@ -22,5 +22,6 @@
 
     <ItemGroup>
         <Protobuf Include="Protos.proto" GrpcServices="Server" />
+        <None Include="Protos.proto" Pack="true" PackagePath="Protos/Proto.Actor" />
     </ItemGroup>
 </Project>
